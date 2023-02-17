@@ -1,0 +1,19 @@
+/*Ler uma frase e contar quantos caracteres sao espac¸os em brancos. Lembre-se que ˜
+uma frase e um conjunto de caracteres (vetor). */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char frase[100];
+    int contador=0;
+
+    scanf("%[^\n]s",&frase);
+    for(int i=0;frase[i]!='\0';i++){
+        if(frase[i]==' '){
+            contador++;
+        }
+            
+    }
+    printf("%d",contador);
+}
